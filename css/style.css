@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  color: #151515;
+}
+
+.classifier__wrapper {
+  margin: 2.5rem 0;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.classifier__title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.classifier__text {
+  width: 32vw;
+  padding: 1.85rem 0;
+  line-height: 1.85;
+}
+
+.classifier__video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  position: relative;
+}
+
+.video {
+  display: block;
+  border-radius: 1.5rem;
+  transform: scale(-1, 1);
+}
+
+.classifier__btn {
+  left: 50%;
+  bottom: 10%;
+  padding: 1.10rem 1.25rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff;
+  background-color: #0055ff;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+.classifier__btn:hover {
+  background-color: #0045ce;
+}
+
+.classifier__result {
+  display: block;
+  padding-top: 1.25rem;
+}
+
+.classifier__loader {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  border: 1rem solid #f3f3f3;
+  border-top: 1rem solid #0055ff; 
+  border-radius: 50%;
+  animation: spin 2.5s linear infinite;
+  top: 40%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -60px;
+  position: absolute;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

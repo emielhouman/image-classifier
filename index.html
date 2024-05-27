@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Classifier</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</head>
+<body>
+  <div class="classifier__wrapper">
+    <h1 class="classifier__title">Image Classifier</h1>
+    <p class="classifier__text">Don't be too hard for me... I'm not from planet earth so I might not recognise everything. I will do the best I can!</p>
+    <div class="classifier__video">
+      <video class="video" width="560" height="420" autoplay></video>
+      <button class="classifier__btn">Check image</button>
+    </div>
+    <div class="classifier__result">
+      <h2 class="result">Click the button to start recognising an image...</h2>
+    </div>
+    <div class="classifier__loader"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
